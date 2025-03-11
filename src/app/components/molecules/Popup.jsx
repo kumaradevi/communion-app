@@ -30,7 +30,7 @@ const Popup = ({setPopup,events,setEvents}) => {
     }
   return (
     <div className='bg-gray-200 absolute top-0 left-0 w-full h-full flex justify-center items-center z-[9999999]'>
-   <div className='bg-white w-[600px] h-[480px] p-8   rounded-3xl relative'>
+   <div className='bg-white w-[600px] min-h-[480px] p-8   rounded-3xl relative'>
      <h2>Add Event</h2>
      <div className='absolute right-6 top-6' onClick={()=>setPopup(false)}><IoMdClose size={30}/></div>
      <form action="" onSubmit={handleSubmit}>
