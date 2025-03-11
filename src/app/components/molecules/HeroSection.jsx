@@ -1,10 +1,10 @@
 "use client";
-import Lottie from 'lottie-react';
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 import welcomeAnimation from "../../models/welcomeAnimation"
-
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 const HeroSection = () => {
   const router=useRouter();
   return (
